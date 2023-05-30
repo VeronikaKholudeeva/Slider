@@ -1,0 +1,18 @@
+@import '../variables';
+@import '../mixins';
+
+button{
+    border: 1px solid $border-color;
+    background: none;
+    color: $font-color;
+    box-sizing: border-box;
+    @include size(60px, 60px);
+    padding: 0;
+    &:active{
+        background-color: $border-color;
+    }
+    &.nextslide{
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        
+    }
+}

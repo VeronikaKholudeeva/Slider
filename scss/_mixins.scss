@@ -1,0 +1,19 @@
+@import './variables';
+
+@mixin flexbox($direction, $justCon) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justCon;
+}
+
+@mixin size ($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+@mixin fontSettings ($lineHeight, $fontSize, $fontWeight:400, $color:$font-color) {
+    line-height: $lineHeight;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    color: $color; 
+}

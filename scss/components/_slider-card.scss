@@ -1,0 +1,27 @@
+@import '../variables';
+@import '../mixins';
+
+.slider_card{
+    display: grid;
+    width: 260px;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    border: 1px solid $border-color;
+    color: $font-color;
+    margin-top: 40px;
+    grid-template-rows: repeat(3, min-content);
+    h3{
+        margin: 10px 0;
+        @include fontSettings(26px, 16px);
+    }
+    img{
+        width: 220px;
+    }
+    p{
+        @include fontSettings(22px, 12px);
+    }
+    figcaption{
+        opacity: 0.6;
+        @include fontSettings(22px, 12px);
+    }
+}

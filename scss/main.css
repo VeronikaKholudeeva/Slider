@@ -1,0 +1,145 @@
+button {
+  border: 1px solid #CCDDFF;
+  background: none;
+  color: rgb(82, 124, 205);
+  box-sizing: border-box;
+  height: 60px;
+  width: 60px;
+  padding: 0;
+}
+button:active {
+  background-color: #CCDDFF;
+}
+button.nextslide {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.slider_card {
+  display: grid;
+  width: 260px;
+  box-sizing: border-box;
+  padding: 20px 20px;
+  border: 1px solid #CCDDFF;
+  color: rgb(82, 124, 205);
+  margin-top: 40px;
+  grid-template-rows: repeat(3, -webkit-min-content);
+  grid-template-rows: repeat(3, min-content);
+}
+.slider_card h3 {
+  margin: 10px 0;
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(82, 124, 205);
+}
+.slider_card img {
+  width: 220px;
+}
+.slider_card p {
+  line-height: 22px;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(82, 124, 205);
+}
+.slider_card figcaption {
+  opacity: 0.6;
+  line-height: 22px;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(82, 124, 205);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+* {
+  margin: 0;
+  font-family: "Roboto";
+}
+
+.slider {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: 50px auto;
+  color: rgb(82, 124, 205);
+  display: grid;
+  align-items: center;
+}
+.slider .slider_cards {
+  width: 1160px;
+  overflow: hidden;
+  grid-area: 2/1/2/4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+}
+.slider h1 {
+  grid-area: 1/1/1/2;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+}
+.slider hr {
+  grid-area: 1/2/1/3;
+  justify-self: right;
+  height: 0;
+  width: 360px;
+  border: 1px solid #CCDDFF;
+  margin-right: 40px;
+  box-sizing: border-box;
+}
+.slider .slider_buttons {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  grid-area: 1/2/1/4;
+  text-align: right;
+  justify-self: right;
+}
+.slider .slider_buttons .prevslide {
+  margin: 0 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .slider {
+    display: grid;
+    padding: 0 20px;
+    width: 100%;
+  }
+  .slider .slider_cards {
+    overflow: hidden;
+    grid-area: 2/1/2/1;
+  }
+  .slider .slider_cards .slider_card {
+    width: 280px;
+  }
+  .slider h1 {
+    grid-area: 1/1/1/1;
+  }
+  .slider .slider_buttons {
+    grid-area: 3/1/3/1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .slider .slider_buttons .prevslide {
+    margin: 20px 0;
+  }
+  .slider .slider_buttons button {
+    height: 55px;
+    width: 55px;
+    margin-top: 20px;
+  }
+  .slider hr {
+    grid-area: 3/1/3/1;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .slider hr + hr {
+    margin-right: 20%;
+  }
+}/*# sourceMappingURL=main.css.map */
