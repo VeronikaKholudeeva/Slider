@@ -110,6 +110,7 @@ button.nextslide {
     width: 100%;
   }
   .slider .slider_cards {
+    width: 100%;
     overflow: hidden;
     grid-area: 2/1/2/1;
   }
