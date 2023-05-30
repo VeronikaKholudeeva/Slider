@@ -60,6 +60,7 @@
             width: 100%;
             overflow:hidden;
             grid-area: 2/1/2/1;
+            touch-action:none;
             .slider_card{
                 width: 280px;
             }
